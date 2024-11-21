@@ -1,0 +1,175 @@
+/* Reset some default styles */
+body, h1, a, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #081c15; /* Dark brown text color */
+    line-height: 1.6;
+    /* background-color: red; */
+    background: url('background.jpg');
+    background-size: cover;
+    /* background-blend-mode: overlay; Blend the background image with the overlay */
+    /* background-color: #344E41; Light beige with some transparency */
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+body{
+    /* background-image: url("background.jpg"); */
+}
+
+/* Wrapper to contain header, main, and footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow wrapper to expand */
+}
+
+/* Header styles */
+header {
+    background: #344E41; /* Semi-transparent medium brown */
+    color: #DAD7CD; /* Light beige text color */
+    padding: 20px 0;
+    position: relative; /* Positioning context for logo */
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; /* Relative positioning for children */
+    text-align: center; /* Center the text */
+}
+
+/* Logo styles */
+.logo {
+    /* max-width: 60px; Smaller logo size */
+    width: 80px;
+    border-radius: 100px;
+    height: auto;
+    position: absolute; /* Absolute positioning within the header */
+    left: -90px; /* Move the image to the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+}
+
+/* Header text styles */
+header h1 {
+    margin-left: 1px; /* Adjust margin to make space for the logo */
+    text-align: center; /* Center the header text */
+}
+
+/* Main content styles */
+main {
+    flex: 1; /* Allow main to expand and fill available space */
+    padding: 20px 0;
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    margin: 7px;
+    text-decoration: none;
+    color: #DAD7CD; /* Light beige text color */
+    background-color: #3A5A40; /* Warm brown background for buttons */
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #3A5A40; /* Border matching button background */
+    font-weight: bold;
+    font-size: 16px; /* Font size for better readability */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-align: center; /* Center the text inside the button */
+    /* position: absolute; */
+    /* top:40%; */
+}
+
+.links a:hover {
+    background-color: #344E41; /* Darker brown for hover effect */
+    color: #DAD7CD; /* Ensure text remains readable on hover */
+    border-color: #344E41; /* Darker brown border on hover */
+}
+
+/* About Us and Contact Us Sections */
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* About Us Section */
+.about-us-section {
+    display:contents;
+    background: #344E41; /* Semi-transparent medium brown */
+    color: #DAD7CD; /* Light beige text color */
+    padding: 7px;
+    text-align:left;
+    flex: 1; /* Make the section flexible */
+    margin-right: 10px; /* Space between sections */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Contact Us Section */
+.contact-section {
+    background: #344E41; /* Semi-transparent medium brown */
+    color: #DAD7CD; /* Light beige text color */
+    padding: 20px;
+    flex: 1; /* Make the section flexible */
+    margin-left: 10px; /* Space between sections */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Footer styles */
+footer {
+    background: #344E41; /* Semi-transparent medium brown */
+    color: #DAD7CD; /* Light beige text color */
+    padding: 10px 20px; /* Compact padding */
+    text-align: center; /* Center-align text */
+    /* margin-right: 10px; */
+    margin-top:auto; /* Push footer to the bottom */
+}
+
+footer .container {
+    color: #DAD7CD;
+    display:inline-block;
+    max-width: 100%;
+    margin: 0; /* Remove default margin */
+    padding:0; /* Remove default padding */
+}
+.container a{
+    color: #DAD7CD;
+    text-decoration: none;
+    /* margin-left: 20px; */
+}
+
+
+#logo{
+    /* width: 120px;
+    height: 60px; */
+    position: absolute;
+    left: 16%;
+}
+
+#heading{
+    font-size: 2.5rem;
+}
+
+#footerright{
+    margin-left: 60px;
+}

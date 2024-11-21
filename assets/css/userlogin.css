@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('background.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+#heading{
+    /* margin-left: 10px;
+    margin-top: 90px; */
+    position: absolute;
+    left: 110%;
+    top: 23%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    color: green;
+    background: transparent;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid green;
+}
+
+.input-field:hover {
+    background-color: #e0ffe0;
+    transition-duration: 0.5s;
+}
+
+#uname, #pass {
+    width: 55%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 30rem;
+    /* margin-top: 10rem; */
+}
+#uname{
+    margin-top: 10rem;
+}
+
+.football-container {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.football {
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.6s ease-out, opacity 0.6s ease;
+}
+
+#signintext{
+    color: green;
+    /* color: red; */
+    position: absolute;
+    width: 60px;
+    cursor: pointer;
+    /*
+    transition: transform 0.6s ease-out, opacity 0.6s ease; */
+    /* position: absolute;
+    top: 50%; */
+    /* top: 40%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color: white; */
+    /* font-size: 1.2rem; */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: none; /* Prevent clicking the text instead of the image */
+}
+
+.kick {
+    animation: kickAnimation 1s ease-out forwards;
+}
+
+@keyframes kickAnimation {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(300px) translateY(0) rotate(180deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(750px) translateY(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#congratulations {
+    /* display: none; */
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 120%;
+    top: 150%;
+    /* margin-top: 0px;
+    margin-left: 100%; */
+}
+
+
+.hidden {
+    display: none;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        /* Start with 0 opacity */
+    }
+    to {
+        opacity: 0;
+       /* transition to full opacity */
+    }
+}
+
+.fadeoutanimation{
+    animation: fade-out 1.5s;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    position: absolute;
+    top: 5%;
+    left: 150%;
+    /* position: block; */
+    /* left:150%; */
+}
+
+
+#btn{
+    /* background: transparent;
+    display: none; */
+
+}
+
+.btn{
+    /* background-color: red; */
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+#form{
+    /* color: red; */
+    /* margin-left: 100px; */
+}
